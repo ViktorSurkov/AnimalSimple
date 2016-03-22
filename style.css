@@ -1,0 +1,69 @@
+body{
+    background-image: url("img.jpg");
+    font-family: Gill Sans, sans-serif;
+    font-size: 20px;
+    color: lightgoldenrodyellow;
+    font-weight: bold;
+}
+tr{
+    height: 5px;
+}
+
+
+div.input1{
+    padding-left: 19%;
+    display: inline-block;
+}
+
+div.input2{
+    padding-left: 15%;
+    display: inline-block;
+}
+
+input{
+    float: right;
+}
+
+div.input1, div.input2, div.output1, div.output2{
+    padding-top: 0%;
+}
+
+table{
+    width: 100px;
+    height: 300px;
+}
+
+
+input{
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    float:left;
+    height: 25px;
+    border-radius:5px;
+    font-size: 15px;
+}
+
+input.button{
+    margin-left: 85%;
+}
+
+
+div.buttons{
+margin-left: 70%;
+    position: absolute;
+
+}
+
+div.output{
+    z-index: 1;
+    visibility: hidden;
+    position: inherit;
+}
+
+div.combineAnimal{
+    padding-left: 23%;
+    visibility: hidden;
+    position: inherit;
+}
+

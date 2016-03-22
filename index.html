@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title>Друга лаба</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="inputtt">
+<div class="input">
+<div class="input1">
+		<table>
+				<tr>Перша Звірюшка</tr>
+				<tr>
+			<td><p>Назва тваринки:</p></td>
+			<td><input type="text" value="Кролик" id="name"></td>
+				</tr>
+				<tr>
+			<td><p>Її тип:</p></td>
+			<td><input type="text" value="Свійська тварина" id="type"></td>
+				</tr>
+				<tr>
+			<td><p>Кількість ніг:</p></td>
+			<td><input type="number" value="2" id="nOfLegs"></td>
+				</tr>
+				<tr>
+			<td><p>Кількість рук:</p></td>
+			<td><input type="number" value="2" id="nOfArms"></td>
+				</tr>
+				<tr>
+			<td><p>Її вага:</p></td>
+			<td><input type="number" value="7" id="avWigth"></td>
+				</tr>
+				<tr>
+			<td><p>Максимальна швидкість:</p></td>
+			<td><input type="number" value="30" id="maxSpeed"></td>
+				</tr>
+				<tr>
+			<td><p>Середня швидкість:</p></td>
+			<td><input type="number" value="3" id="avSpeed"></td>
+				</tr>
+				<tr>
+			<td><p>Живучість:</p></td>
+			<td><input type="number" value="5" id="avOld"></td>
+				</tr>
+				<tr>
+			<td><p>У Червоній Книзі?</p></td>
+			<td><input type="checkbox" value="true" id="isInRedBook"></td>
+				</tr>
+		</table>
+</div>
+
+
+<div class="input2">
+
+		<table>
+			<tr>Друга Звірюшка</tr>
+			<tr>
+				<td><p>Назва тваринки:</p></td>
+				<td><input type="text" value="Вовк" id="name2"></td>
+			</tr>
+			<tr>
+				<td><p>Її тип:</p></td>
+				<td><input type="text" value="Хижак" id="type2"></td>
+			</tr>
+			<tr>
+				<td><p>Кількість ніг:</p></td>
+				<td><input type="number" value="2" id="nOfLegs2"></td>
+			</tr>
+			<tr>
+				<td><p>Кількість рук:</p></td>
+				<td><input type="number" value="2" id="nOfArms2"></td>
+			</tr>
+			<tr>
+				<td><p>Її вага:</p></td>
+				<td><input type="number" value="40" id="avWigth2"></td>
+			</tr>
+			<tr>
+				<td><p>Максимальна швидкість</p></td>
+				<td><input type="number" value="60" id="maxSpeed2"></td>
+			</tr>
+			<tr>
+				<td><p>Середня швидкість</p></td>
+				<td><input type="number" value="20" id="avSpeed2"></td>
+			</tr>
+			<tr>
+				<td><p>Живучість</p></td>
+				<td><input type="number" value="20" id="avOld2"></td>
+			</tr>
+			<tr>
+				<td><p>У Червоній Книзі?</p></td>
+				<td><input type="checkbox" value="" id="isInRedBook2"></td>
+			</tr>
+		</table>
+	<input class="button" type="submit" value="Відправити дані" onclick="addAnimal(), show(), buttons()">
+
+		</div>
+	</div>
+</div>
+
+	<!--ВИХІДНИЙ РЕЗУЛЬТАТ 1-->
+
+<div class="output">
+<div class="intput">
+	<div class="input1">
+		<table>
+			<tr>
+				<td><p>Назва тваринки:</p></td>
+				<td id="AnimalName"></td>
+			</tr>
+			<tr>
+				<td><p>Її тип:</p></td>
+				<td id="AnimalType"></td>
+			</tr>
+			<tr>
+				<td><p>Кількість ніг:</p></td>
+				<td id="AnimalLegs"></td>
+			</tr>
+			<tr>
+				<td><p>Кількість рук:</p></td>
+				<td id="AnimalArms"></td>
+			</tr>
+			<tr>
+				<td><p>Її вага:</p></td>
+				<td id="AnimalWeigth"></td>
+			</tr>
+			<tr>
+				<td><p>Максимальна швидкість:</p></td>
+				<td id="AnimalMaxSpeed"></td>
+			</tr>
+			<tr>
+				<td><p>Середня швидкість:</p></td>
+				<td id="AnimalAvSpeed"></td>
+			</tr>
+			<tr>
+				<td><p>Живучість:</p></td>
+				<td id="AnimalOld"></td>
+			</tr>
+			<tr>
+				<td><p>У Червоній Книзі?</p></td>
+				<td id="AnimalRed"></td>
+			</tr>
+			<tr>
+				<td><p>Сила:</p></td>
+				<td id="AnimalPower"></td>
+			</tr>
+			<tr>
+				<td><p>Прискорення:</p></td>
+				<td id="AnimalAcc"></td>
+			</tr>
+		</table>
+	</div>
+
+
+	<div class="input2">
+
+		<table>
+			<tr>
+				<td><p>Назва тваринки:</p></td>
+				<td id="AnimalName2"></td>
+			</tr>
+			<tr>
+				<td><p>Її тип:</p></td>
+				<td id="AnimalType2"></td>
+			</tr>
+			<tr>
+				<td><p>Кількість ніг:</p></td>
+				<td id="AnimalLegs2"></td>
+			</tr>
+			<tr>
+				<td><p>Кількість рук:</p></td>
+				<td id="AnimalArms2"></td>
+				<td class="powerButton"></td>
+			</tr>
+			<tr>
+				<td><p>Її вага:</p></td>
+				<td id="AnimalWeigth2"></td>
+				<td class="combine"></td>
+			</tr>
+			<tr>
+				<td><p>Максимальна швидкість:</p></td>
+				<td id="AnimalMaxSpeed2"></td>
+				<td class="same"></td>
+			</tr>
+			<tr>
+				<td><p>Середня швидкість:</p></td>
+				<td id="AnimalAvSpeed2"></td>
+			</tr>
+			<tr>
+				<td><p>Живучість:</p></td>
+				<td id="AnimalOld2"></td>
+			</tr>
+			<tr>
+				<td><p>У Червоній Книзі?</p></td>
+				<td id="AnimalRed2"></td>
+			</tr>
+			<tr>
+				<td><p>Сила:</p></td>
+				<td id="AnimalPower2"></td>
+			</tr>
+			<tr>
+				<td><p>Прискорення:</p></td>
+				<td id="AnimalAcc2"></td>
+			</tr>
+		</table>
+	</div>
+</div>
+</div>
+
+				<!--НОВА СХРЕЩЕНА ТВАРИНА-->
+
+
+	<div class="combineAnimal">
+			<div class="input1">
+				<table>
+					<tr>
+						<td><p>Назва тваринки:</p></td>
+						<td id="AnimalName3"></td>
+					</tr>
+					<tr>
+						<td><p>Її тип:</p></td>
+						<td id="AnimalType3"></td>
+					</tr>
+					<tr>
+						<td><p>Кількість ніг:</p></td>
+						<td id="AnimalLegs3"></td>
+					</tr>
+					<tr>
+						<td><p>Кількість рук:</p></td>
+						<td id="AnimalArms3"></td>
+					</tr>
+					<tr>
+						<td><p>Її вага:</p></td>
+						<td id="AnimalWeigth3"></td>
+					</tr>
+					<tr>
+						<td><p>Максимальна швидкість:</p></td>
+						<td id="AnimalMaxSpeed3"></td>
+					</tr>
+					<tr>
+						<td><p>Середня швидкість:</p></td>
+						<td id="AnimalAvSpeed3"></td>
+					</tr>
+					<tr>
+						<td><p>Живучість:</p></td>
+						<td id="AnimalOld3"></td>
+					</tr>
+					<tr>
+						<td><p>У Червоній Книзі?</p></td>
+						<td id="AnimalRed3">Ні</td>
+					</tr>
+					<tr>
+						<td><p>Сила:</p></td>
+						<td id="AnimalPower3"></td>
+					</tr>
+					<tr>
+						<td><p>Прискорення:</p></td>
+						<td id="AnimalAcc3"></td>
+					</tr>
+				</table>
+			</div>
+
+</div>
+<script type="text/javascript" src="alert.js"></script>
+</body>
+</html>
